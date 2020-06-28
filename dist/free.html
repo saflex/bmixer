@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web-page</title>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html">
+                <img src="img/logo.png" height="102" width="374" alt="">
+            </a>
+            <div class="nav">
+                <div class="paralelogramo pg2">
+                    <a class="cl2" href="index.html">HOME</a>
+                 </div>
+                <div class="paralelogramo">
+                    <a class="cl1 active" href="free.html">FREE</a>
+                </div>
+                <div class="paralelogramo pg2">
+                    <a class="cl2" href="faq.html">FAQ</a>
+                </div>
+                <div class="paralelogramo">
+                    <a class="cl3" href="support.html">SUPPORT</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="main-area">
+        <div class="container">
+            <h1>FREE</h1>
+            <div id="content">
+                <h2>How to use bitcoin anonymously?</h2>
+                <p>
+                    As you probably already know, bitcoin is not anonymous (this property was never part of its original design).
+                    Bitcoin transactions are chained together in a permanent public record. Analysis of the blockchain may reveal a
+                    lot information about your transactions [1] (e.g., recipients of your payments, addresses in your wallet or the
+                    balance of your wallet). The following sections contains everything you need to know in order to prevent such
+                    kind of blockchain analysis.</p>
+                <p>
+                    There are currently three main methods how you can make your transactions more private. The first method is
+                    called CoinJoin [2] and is based on "joining" your transactions with transactions of other users. Most advanced
+                    project based on this method is JoinMarket [3]. This method is very secure, but unfortunately not fully
+                    implemented yet. However, the development process continues and the user base is slowly growing. The second
+                    method is called Confidential Transactions [4]. In simple terms, this method encrypts amounts in your
+                    transactions and helps obfuscate chain of the transactions. This method is not yet part of bitcoin
+                    implementation, but may be implemented in the future.</p>
+                <p>
+                    How bitcoin mixing service works</p>
+                <h2>Figure 1: Basic workflow of a Bitcoin Mixing Service</h2>
+                <p> The oldest and most often used method is bitcoin mixing (see Figure 1) which works on similar basis as mix
+                    network [5]. The bitcoin mixer receives bitcoins to input addresses and sends out different amounts from
+                    different input address. This method requires trusting the mixer, but is sufficiently secure when used properly.
+                    Manny of our users mix their bitcons for the first time. Because mixing your bitcoins properly requires to
+                    follow some simple rules, we decided to write a manual that will make this operation much easier.</p>
+                <h2>Buying bitcoins</h2>
+                <p> The first step is of course to get some bitcoins. Unfortunately, there is no easy way to buy bitcoins fully
+                    anonymously (we will solve that problem later). Most of the bitcoin exchanges have Know Your Customer (KYC)
+                    policy. That means you have to provide your ID, driver's license or passport before buying some bitcoins. Even
+                    when the identity verification is not required your bitcoins will be still linked to your bank account or your
+                    face (when buying in person). Therefore, feel free to chose the service which requires the lowest possible
+                    amount of information.</p>
+                <p>We recommend using LocalBitcoins.com, since you can buy bitcoins quickly via this service without identity
+                    verification in many countries. However, we don't recommend using Tor Browser with this service, because some
+                    bitcoin sellers won't sell the bitcoins to you if you are connected via Tor. LocalBitcoins.com is good service,
+                    especially if you prefer wire transfer or buying bitcoins in person. It is also possible to buy bitcoins at your
+                    local bitcoin ATM or with debit card via circle.com. Unfortunately, not all debit/credit cards are accepted.</p>
+            </div>
+            <br><br><br><br>
+        </div>
+    </section>
+    <!-- js -->
+     <script src="js/libs.min.js"></script>
+     <script src="js/main.js"></script>
+</body>
+
+</html>
